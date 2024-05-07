@@ -3,25 +3,6 @@ import java.util.Arrays;
 class RemoveElement {
     public static String removeElement(int[] nums, int val) {
 
-//        int x=0;
-//
-//        System.out.println(Arrays.toString(nums));
-//
-//        for(int y = 0; y < nums.length; y++){
-//
-//            System.out.println("x="+x+"   y="+y);
-//            if( nums[y] != val){
-//                System.out.println("TROCA");
-//                int temp = nums[x];
-//                nums[x] = nums[y];
-//                nums[y] = temp;
-//                x++;
-//            }
-//            System.out.println(Arrays.toString(nums)+"\n");
-//        }
-//
-//        return x+", nums = " + Arrays.toString(nums);
-
         int timeEquals = 0;
 
         System.out.println(Arrays.toString(nums));
