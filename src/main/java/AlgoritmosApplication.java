@@ -8,13 +8,28 @@ public class AlgoritmosApplication {
 	public static void main(String[] args) {
 
 
-		switch (3){
+		switch (4){
 
 			case 1 : System.out.println(twoSum(1));
 			case 2 : System.out.println(removeElement(2));
 			case 3 : System.out.println(romanToInt(4));
+			case 4 : System.out.println(lengthOfTheLastWord(2));
 
 		}
+	}
+
+	static int lengthOfTheLastWord(int example){
+
+		switch (example){
+
+			case 1 : return LengthOfTheLastWord.lengthOfTheLastWord("Hello World");
+			case 2 : return LengthOfTheLastWord.lengthOfTheLastWord("   fly me   to   the moon  ");
+			case 3 : return LengthOfTheLastWord.lengthOfTheLastWord("luffy is still joyboy");
+			case 4 : return LengthOfTheLastWord.lengthOfTheLastWord("Java is the greatest");
+			case 5 : return LengthOfTheLastWord.lengthOfTheLastWord("a ");
+		}
+
+		return 0;
 	}
 
 	static int romanToInt(int example){
@@ -25,7 +40,6 @@ public class AlgoritmosApplication {
 			case 2 : return RomanToInt.romanToInt("LVIII");
 			case 3 : return RomanToInt.romanToInt("MCMXCIV");
 			case 4 : return RomanToInt.romanToInt("MMXVII");
-			case 5 : return RomanToInt.romanToInt("IVC");
 		}
 
 		return 0;
