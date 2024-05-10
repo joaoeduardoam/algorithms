@@ -8,14 +8,29 @@ public class AlgoritmosApplication {
 	public static void main(String[] args) {
 
 
-		switch (2){
+		switch (3){
 
 			case 1 : System.out.println(twoSum(1));
 			case 2 : System.out.println(removeElement(2));
-			case 3 : //
+			case 3 : System.out.println(romanToInt(4));
 
 		}
 	}
+
+	static int romanToInt(int example){
+
+		switch (example){
+
+			case 1 : return RomanToInt.romanToInt("III");
+			case 2 : return RomanToInt.romanToInt("LVIII");
+			case 3 : return RomanToInt.romanToInt("MCMXCIV");
+			case 4 : return RomanToInt.romanToInt("MMXVII");
+			case 5 : return RomanToInt.romanToInt("IVC");
+		}
+
+		return 0;
+	}
+
 
 	static String removeElement(int example){
 
