@@ -8,14 +8,32 @@ public class AlgoritmosApplication {
 	public static void main(String[] args) {
 
 
-		switch (4){
+		switch (5){
 
 			case 1 : System.out.println(twoSum(1));
 			case 2 : System.out.println(removeElement(2));
 			case 3 : System.out.println(romanToInt(4));
 			case 4 : System.out.println(lengthOfTheLastWord(2));
+			case 5 : System.out.println(longestCommonPrefix(6));
 
 		}
+	}
+
+	static String longestCommonPrefix(int example){
+
+		switch (example){
+
+			case 1 : return LongestCommonPrefix.longestCommonPrefix(new String[] {"Hello World","Helasd"});
+			case 2 : return LongestCommonPrefix.longestCommonPrefix(new String[] {"flower","flight","flow"});
+			case 3 : return LongestCommonPrefix.longestCommonPrefix(new String[] {"dog","racecar","car"});
+			case 4 : return LongestCommonPrefix.longestCommonPrefix(new String[] {"a"});
+			case 5 : return LongestCommonPrefix.longestCommonPrefix(new String[] {""});
+			case 6 : return LongestCommonPrefix.longestCommonPrefix(new String[] {"",""});
+			case 7 : return LongestCommonPrefix.longestCommonPrefix(new String[] {"ab","a"});
+			case 8 : return LongestCommonPrefix.longestCommonPrefix(new String[] {"Helloasd","Hellasd","Heqweqqqqqqqqqqq", "Hello"});
+		}
+
+		return "";
 	}
 
 	static int lengthOfTheLastWord(int example){
