@@ -7,17 +7,43 @@ public class AlgoritmosApplication {
 
 	public static void main(String[] args) {
 
+		Algorithm algorithm = new PalindromeNumber();
 
-		switch (5){
+		int example = switch (4) {
+            case 1 -> 121;
+            case 2 -> -121;
+            case 3 -> 10;
+            case 4 -> 12121;
+            default -> 0;
+        };
 
-			case 1 : System.out.println(twoSum(1));
-			case 2 : System.out.println(removeElement(2));
-			case 3 : System.out.println(romanToInt(4));
-			case 4 : System.out.println(lengthOfTheLastWord(2));
-			case 5 : System.out.println(longestCommonPrefix(6));
+        System.out.println(algorithm.run(example));
 
-		}
+
+//		switch (6){
+//
+//			case 1 : System.out.println(twoSum(1));
+//			case 2 : System.out.println(removeElement(2));
+//			case 3 : System.out.println(romanToInt(4));
+//			case 4 : System.out.println(lengthOfTheLastWord(2));
+//			case 5 : System.out.println(longestCommonPrefix(6));
+//			case 6 : System.out.println(palindromeNumber(3));
+//
+//		}
 	}
+
+//	static boolean palindromeNumber(int example){
+//
+//		switch (example){
+//
+//			case 1 : return PalindromeNumber.isPalindromeNumber(121);
+//			case 2 : return PalindromeNumber.isPalindromeNumber(-121);
+//			case 3 : return PalindromeNumber.isPalindromeNumber(12011021);
+//		}
+//
+//		return false;
+//	}
+
 
 	static String longestCommonPrefix(int example){
 
